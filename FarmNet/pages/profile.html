@@ -1,0 +1,96 @@
+<div class="container">
+    <link rel="stylesheet" href="../styles.css">
+    <section class="profile-header">
+        <div class="profile-avatar">
+            <img src="../assets/images/avatar.jpg" alt="User avatar">
+            <button class="btn-edit-avatar"><i class="fas fa-camera"></i></button>
+        </div>
+        <div class="profile-info">
+            <h1>Rajesh Kumar</h1>
+            <p class="farmer-type"><i class="fas fa-cow"></i> Cattle Farmer</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Northern Region</p>
+            <div class="profile-stats">
+                <div class="stat">
+                    <strong>24</strong>
+                    <span>Posts</span>
+                </div>
+                <div class="stat">
+                    <strong>56</strong>
+                    <span>Connections</span>
+                </div>
+                <div class="stat">
+                    <strong>3</strong>
+                    <span>Years</span>
+                </div>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <button class="btn btn-outline"><i class="fas fa-edit"></i> Edit Profile</button>
+            <button class="btn btn-primary"><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+    </section>
+
+    <section class="profile-content">
+        <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="activity">Activity</button>
+            <button class="tab-btn" data-tab="listings">My Listings</button>
+            <button class="tab-btn" data-tab="connections">Connections</button>
+            <button class="tab-btn" data-tab="settings">Settings</button>
+        </div>
+
+        <div class="tab-content active" id="activity-tab">
+            <h2>Recent Activity</h2>
+            <div class="activity-list" id="activity-list">
+                <!-- Activity items will be loaded here via JavaScript -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="listings-tab">
+            <h2>My Marketplace Listings</h2>
+            <div class="user-listings" id="user-listings">
+                <!-- Listings will be loaded here via JavaScript -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="connections-tab">
+            <h2>My Network</h2>
+            <div class="connections-grid" id="connections-grid">
+                <!-- Connections will be loaded here via JavaScript -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="settings-tab">
+            <h2>Account Settings</h2>
+            <form class="settings-form">
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" value="rajesh@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Farmer Type</label>
+                    <select class="form-control">
+                        <option value="cattle" selected>Cattle Farmer</option>
+                        <option value="goat">Goat Farmer</option>
+                        <option value="sheep">Sheep Farmer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Region</label>
+                    <select class="form-control">
+                        <option value="north" selected>Northern Region</option>
+                        <option value="south">Southern Region</option>
+                        <option value="east">Eastern Region</option>
+                        <option value="west">Western Region</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Change Password</label>
+                    <input type="password" class="form-control" placeholder="New password">
+                    <input type="password" class="form-control" placeholder="Confirm new password">
+                </div>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+        </div>
+    </section>
+    </div>

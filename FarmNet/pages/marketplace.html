@@ -1,0 +1,55 @@
+<div class="container">
+    <link rel="stylesheet" href="../styles.css">
+    <section class="marketplace-header">
+        <h1>FarmNet Marketplace</h1>
+        <p class="lead">Buy and sell livestock, feed, and equipment with verified farmers.</p>
+        <div class="marketplace-actions">
+            <button id="filter-btn" class="btn btn-outline"><i class="fas fa-filter"></i> Filters</button>
+            <a href="#add-listing" class="btn btn-primary"><i class="fas fa-plus"></i> Add Listing</a>
+        </div>
+    </section>
+
+    <div class="marketplace-filters" id="marketplace-filters">
+        <div class="filter-group">
+            <label>Category</label>
+            <select class="form-control">
+                <option value="all">All Categories</option>
+                <option value="cattle">Cattle</option>
+                <option value="goat">Goats</option>
+                <option value="sheep">Sheep</option>
+                <option value="feed">Feed</option>
+                <option value="equipment">Equipment</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Location</label>
+            <select class="form-control">
+                <option value="all">All Locations</option>
+                <option value="GP">Gauteng</option>
+                <option value="NW">North West</option>
+                <option value="KZN">Kwa Zulu Natal</option>
+                <option value="MP">Mpumalanga</option>
+                <option value="NC">Nothern Cape</option>
+                <option value="WC">Western Cape</option>
+                <option value="FC">Free State</option>
+                <option value="LP">Limpopo</option>
+                <option value="LP">Eastern Cape</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Price Range</label>
+            <div class="price-range">
+                <input type="number" class="form-control" placeholder="Min">
+                <span>to</span>
+                <input type="number" class="form-control" placeholder="Max">
+            </div>
+        </div>
+        <button class="btn btn-primary">Apply Filters</button>
+    </div>
+
+    <section class="marketplace-listings">
+        <div class="grid grid-3" id="listings-container">
+            <!-- Listings will be loaded here via JavaScript -->
+        </div>
+    </section>
+    </div>
